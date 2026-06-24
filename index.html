@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026時間設計半日工作坊</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js?v=20260624" defer></script>
+    <script src="script.js?v=20260624" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="title-row" aria-labelledby="event-title">
+        <p class="eyebrow">2026 Half-Day Workshop</p>
+        <h1 id="event-title">2026時間設計半日工作坊</h1>
+      </section>
+
+      <section class="image-row" aria-label="活動圖片">
+        <img src="cover.jpg" alt="2026時間設計半日工作坊活動主視覺">
+      </section>
+
+      <section class="content-row" aria-label="活動內容與報名表單">
+        <article class="panel agenda-panel">
+          <h2>活動內容</h2>
+          <ol class="agenda-list">
+            <li><time datetime="08:00">8:00</time><span>報到</span></li>
+            <li><time datetime="09:00">9:00</time><span>場次一</span></li>
+            <li><time datetime="10:00">10:00</time><span>break time</span></li>
+            <li><time datetime="10:30">10:30</time><span>場次二</span></li>
+            <li><time datetime="11:30">11:30</time><span>Q&amp;A</span></li>
+            <li><time datetime="12:00">12:00</time><span>活動結束</span></li>
+          </ol>
+        </article>
+
+        <article class="panel form-panel">
+          <h2>報名表單</h2>
+          <form id="registration-form">
+            <label>
+              <span>姓名</span>
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>email</span>
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>電話</span>
+              <input name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            </label>
+            <label>
+              <span>單位</span>
+              <input name="organization" autocomplete="organization" required>
+            </label>
+            <label>
+              <span>職稱</span>
+              <input name="title" autocomplete="organization-title" required>
+            </label>
+            <button type="submit">送出報名</button>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
